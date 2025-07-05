@@ -1,0 +1,96 @@
+plugins {
+    id 'fabric-loom' version '1.10-SNAPSHOT'
+    id 'maven-publish'
+}
+
+version = project.mod_version
+group = project.maven_group
+base {
+    archivesName = project.archives_base_name
+}
+
+repositories {
+    maven {
+        name = 'Fabric'
+        url = 'https://maven.fabricmc.net/'
+    }
+    mavenCentral()
+}
+
+dependencies {
+    minecraft "com.mojang:minecraft:1.21.1"
+    mappings "net.fabricmc:yarn:1.21.1+build.3:v2"
+    modImplementation "net.fabricmc:fabric-loader:0.16.3"
+    modImplementation "net.fabricmc.fabric-api:fabric-api:0.102.0+1.21.1"
+}
+
+processResources {
+    inputs.property "version", project.version
+    inputs.property "mod_id", project.mod_id
+    inputs.property "loader_version", project.loader_version
+
+    filesMatching("fabric.mod.json") {
+        expand(
+                version: project.version,
+                mod_id: project.mod_id,
+                loader_version: project.loader_version
+        )
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    it.options.release = 21
+}
+
+java {
+    withSourcesJar()
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
+}
+
+jar {
+    from("LICENSE") {
+        rename { "${it}_${project.base.archivesName.get()}" }
+        duplicatesStrategy(DuplicatesStrategy.EXCLUDE)
+    }
+}
+
+loom {
+    runs {
+        client {
+            client()
+            name "Minecraft Client"
+            vmArg "-Xmx2G"
+            runDir "run"
+        }
+        server {
+            server()
+            name "Minecraft Server"
+            vmArg "-Xmx2G"
+            runDir "run"
+        }
+    }
+}
+
+task runData(type: JavaExec) {
+    group = "fabric"
+    description = "Run the data generator"
+
+    classpath sourceSets.main.runtimeClasspath
+    classpath configurations.minecraftLibraries
+
+    mainClass = "net.fabricmc.loader.impl.launch.knot.KnotClient"
+
+    args "--username", "DataGeneratorUser"
+    args "--nogui"
+    args "--accessToken", "0"
+    args "--version", "Fabric"
+    args "--gameDir", file("run")
+    args "--launchTarget", "net.minecraft.server.Main"
+    args "--mixin.config=ultimate_swords.mixins.json"
+    args "--mod.id=ultimate_swords"
+    args "--fabric.environment=fabric"
+    args "--data.gen", "sword.ultimate_swords.DataGenerator"
+
+    systemProperty "fabric.log.level", "debug"
+}

@@ -1,0 +1,12 @@
+pluginManagement {
+    repositories {
+        maven {
+            name = 'Fabric'
+            url = 'https://maven.fabricmc.net/'
+        }
+        gradlePluginPortal() // Where most standard Gradle plugins are found
+        mavenCentral()
+    }
+}
+
+rootProject.name = 'UltimateSwords' // This should match your project's name

@@ -1,0 +1,49 @@
+/give Player931 minecraft:enchanted_golden_apple 128
+/gamemode survival
+/give Player353 minecraft:wind_charge 200000000
+/give Player353 minecraft:wind_charge 2000
+/time set night
+/gamemode c
+/gamemode creative
+/time set day
+/gamemode survival
+/give Player929 minecraft:water_bucket
+/gamemode c
+/gamemode creative
+/time set day
+/gamemode survival
+/gamemode creative
+/gamemode survival
+/time set day
+/give @p netherite_pickaxe{Unbreakable:1,Enchantments:[{id:efficiency,lvl:1000}]}
+/give @p minecraft:netherite_pickaxe[{{Enchantments:[{id:"minecraft:efficiency",lvl:5},{id:"minecraft:unbreaking",lvl:3}]}
+/give @p minecraft:netherite_pickaxe[lore=[\'{\"color\":\"gray\",\"italic\":false,\"text\":\"Efficency XXLV\"}\',\'{\"color\":\"gray\",\"italic\":false,\"text\":\"Unbreaking XXLV\"}\'],enchantments={levels:{\"minecraft:efficiency\":255,\"minecraft:unbreaki
+/give @p minecraft:netherite_pickaxe{display:{Lore:['{"text":"Efficency XXLV","color":"gray","italic":false}','{"text":"Unbreaking XXLV","color":"gray","italic":false}']},Enchantments:[{id:"minecraft:efficiency",lvl:5},{id:"minecraft:unbreaking",lvl:5}]} 1
+/give @p minecraft:netherite_pickaxe{Enchantments:[{id:"minecraft:efficiency",lvl:5}]} 1
+/give Player929 minecraft:netherite_pickaxe
+/gamemode creative
+/gamemode survival
+/gamemode creative
+/gamemode survival
+/gamemode creative
+/gamemode survival
+/time set day
+/give Player929 minecraft:firework_rocket 64
+/gamemode creative
+/gamemode survival
+/gamemode creative
+/effect give Player929 minecraft:health_boost infinite
+/gamemode survival
+/effect give Player929 minecraft:health_boost infinite 255
+/gamemode creative
+/give Player329 minecraft:wind_charge 2000
+/gamemode survival
+/give Player329 minecraft:zombie_spawn_egg 64
+/data get entity @p SelectedItem
+/gamemode creative
+/give Player517 minecraft:wind_charge 2000
+/gamemode survival
+/gamemode creative
+/gamemode survival
+/gamemode creative
+/gamemode survival

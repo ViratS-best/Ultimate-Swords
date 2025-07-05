@@ -1,0 +1,471 @@
+2025-07-04T14:28:39.499-0400 [INFO] [org.gradle.internal.nativeintegration.services.NativeServices] Initialized native services in: /home/virat/.gradle/native
+2025-07-04T14:28:39.530-0400 [INFO] [org.gradle.internal.nativeintegration.services.NativeServices] Initialized jansi services in: /home/virat/.gradle/native
+2025-07-04T14:28:39.540-0400 [LIFECYCLE] [org.gradle.launcher.cli.DebugLoggerWarningAction] 
+#############################################################################
+   WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+
+   Debug level logging will leak security sensitive information!
+
+   For more details, please refer to https://docs.gradle.org/8.12.1/userguide/logging.html#sec:debug_security in the Gradle documentation.
+#############################################################################
+
+2025-07-04T14:28:39.612-0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface wlp111s0
+2025-07-04T14:28:39.612-0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2025-07-04T14:28:39.612-0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:c871:6760:21bb:976d%wlp111s0
+2025-07-04T14:28:39.612-0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /192.168.1.196
+2025-07-04T14:28:39.612-0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface lo
+2025-07-04T14:28:39.612-0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? true
+2025-07-04T14:28:39.612-0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback address /0:0:0:0:0:0:0:1%lo
+2025-07-04T14:28:39.612-0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback address /127.0.0.1
+2025-07-04T14:28:39.638-0400 [DEBUG] [org.gradle.cache.internal.DefaultCacheCoordinator] Creating new cache for metadata, path /home/virat/.gradle/caches/8.12.1/jvms/metadata.bin, access org.gradle.cache.internal.DefaultCacheCoordinator@6e01f9b0
+2025-07-04T14:28:39.678-0400 [DEBUG] [org.gradle.launcher.daemon.client.DaemonClient] Executing build c313ba2c-3408-4ebd-b8aa-bce1f6c6b9f2 in daemon client {pid=19411}
+2025-07-04T14:28:39.681-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-07-04T14:28:39.682-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-07-04T14:28:39.685-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-07-04T14:28:39.687-0400 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpOutgoingConnector] Attempting to connect to [56efe220-7032-4233-85f9-d283cafe7f8b port:36825, addresses:[/127.0.0.1]].
+2025-07-04T14:28:39.687-0400 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpOutgoingConnector] Trying to connect to address /127.0.0.1.
+2025-07-04T14:28:39.689-0400 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpOutgoingConnector] Connected to address /127.0.0.1:36825.
+2025-07-04T14:28:39.696-0400 [DEBUG] [org.gradle.launcher.daemon.client.DaemonClient] Connected to daemon DaemonInfo{pid=19337, address=[56efe220-7032-4233-85f9-d283cafe7f8b port:36825, addresses:[/127.0.0.1]], state=Idle, lastBusy=1751653705131, context=DefaultDaemonContext[uid=364eb0da-545a-4f22-bcf6-10d7cca52efe,javaHome=/home/virat/jdk/jdk-21+35,javaVersion=21,javaVendor=Eclipse Adoptium,daemonRegistryDir=/home/virat/.gradle/daemon,pid=19337,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=-Xmx1G,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]}. Dispatching request Build{id=c313ba2c-3408-4ebd-b8aa-bce1f6c6b9f2, currentDir=/home/virat/IdeaProjects/UltimateSwords}.
+2025-07-04T14:28:39.696-0400 [DEBUG] [org.gradle.launcher.daemon.client.DaemonClientConnection] thread 1: dispatching class org.gradle.launcher.daemon.protocol.Build
+2025-07-04T14:28:39.705-0400 [DEBUG] [org.gradle.launcher.daemon.client.DaemonClient] Received result org.gradle.launcher.daemon.protocol.BuildStarted@628c4ac0 from daemon DaemonInfo{pid=19337, address=[56efe220-7032-4233-85f9-d283cafe7f8b port:36825, addresses:[/127.0.0.1]], state=Idle, lastBusy=1751653705131, context=DefaultDaemonContext[uid=364eb0da-545a-4f22-bcf6-10d7cca52efe,javaHome=/home/virat/jdk/jdk-21+35,javaVersion=21,javaVendor=Eclipse Adoptium,daemonRegistryDir=/home/virat/.gradle/daemon,pid=19337,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=-Xmx1G,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]} (build should be starting).
+2025-07-04T14:28:39.705-0400 [INFO] [org.gradle.launcher.daemon.server.exec.LogToClient] The client will now receive all logging from the daemon (pid: 19337). The daemon log file: /home/virat/.gradle/daemon/8.12.1/daemon-19337.out.log
+2025-07-04T14:28:39.706-0400 [INFO] [org.gradle.launcher.daemon.server.exec.LogAndCheckHealth] Starting 2nd build in daemon [uptime: 14.688 secs, performance: 99%, GC rate: 0.00/s, heap usage: 1% of 1 GiB]
+2025-07-04T14:28:39.706-0400 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has started executing the build.
+2025-07-04T14:28:39.707-0400 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] Executing build with daemon context: DefaultDaemonContext[uid=364eb0da-545a-4f22-bcf6-10d7cca52efe,javaHome=/home/virat/jdk/jdk-21+35,javaVersion=21,javaVendor=Eclipse Adoptium,daemonRegistryDir=/home/virat/.gradle/daemon,pid=19337,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=-Xmx1G,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
+2025-07-04T14:28:39.708-0400 [INFO] [org.gradle.internal.work.DefaultWorkerLeaseService] Using 12 worker leases.
+2025-07-04T14:28:39.708-0400 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Daemon worker: acquired lock on worker lease
+2025-07-04T14:28:39.708-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Run build' started
+2025-07-04T14:28:39.712-0400 [DEBUG] [org.gradle.cache.internal.DefaultCacheCoordinator] Creating new cache for fileHashes, path /home/virat/IdeaProjects/UltimateSwords/.gradle/8.12.1/fileHashes/fileHashes.bin, access org.gradle.cache.internal.DefaultCacheCoordinator@31926b5d
+2025-07-04T14:28:39.712-0400 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Acquiring file lock for file hash cache (/home/virat/IdeaProjects/UltimateSwords/.gradle/8.12.1/fileHashes)
+2025-07-04T14:28:39.712-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on file hash cache (/home/virat/IdeaProjects/UltimateSwords/.gradle/8.12.1/fileHashes).
+2025-07-04T14:28:39.712-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on file hash cache (/home/virat/IdeaProjects/UltimateSwords/.gradle/8.12.1/fileHashes).
+2025-07-04T14:28:39.713-0400 [DEBUG] [org.gradle.cache.internal.DefaultCacheCoordinator] Creating new cache for outputFiles, path /home/virat/IdeaProjects/UltimateSwords/.gradle/buildOutputCleanup/outputFiles.bin, access org.gradle.cache.internal.DefaultCacheCoordinator@65e348d0
+2025-07-04T14:28:39.713-0400 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Acquiring file lock for Build Output Cleanup Cache (/home/virat/IdeaProjects/UltimateSwords/.gradle/buildOutputCleanup)
+2025-07-04T14:28:39.713-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on Build Output Cleanup Cache (/home/virat/IdeaProjects/UltimateSwords/.gradle/buildOutputCleanup).
+2025-07-04T14:28:39.714-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on Build Output Cleanup Cache (/home/virat/IdeaProjects/UltimateSwords/.gradle/buildOutputCleanup).
+2025-07-04T14:28:39.714-0400 [DEBUG] [org.gradle.cache.internal.DefaultCacheCoordinator] Creating new cache for resourceHashesCache, path /home/virat/IdeaProjects/UltimateSwords/.gradle/8.12.1/fileHashes/resourceHashesCache.bin, access org.gradle.cache.internal.DefaultCacheCoordinator@31926b5d
+2025-07-04T14:28:39.715-0400 [INFO] [org.gradle.internal.watch.registry.impl.WatchableHierarchies] Now considering [/home/virat/IdeaProjects/UltimateSwords] as hierarchies to watch
+2025-07-04T14:28:39.716-0400 [INFO] [org.gradle.tooling.internal.provider.FileSystemWatchingBuildActionRunner] Watching the file system is configured to be enabled if available
+2025-07-04T14:28:39.716-0400 [DEBUG] [org.gradle.tooling.internal.provider.FileSystemWatchingBuildActionRunner] Watching the file system computed to be enabled if available
+2025-07-04T14:28:39.716-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Build started for file system watching' started
+2025-07-04T14:28:39.716-0400 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected sysfs: /sys from sysfs (remote: false)
+2025-07-04T14:28:39.717-0400 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected proc: /proc from proc (remote: false)
+2025-07-04T14:28:39.717-0400 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected devtmpfs: /dev from udev (remote: false)
+2025-07-04T14:28:39.717-0400 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected devpts: /dev/pts from devpts (remote: false)
+2025-07-04T14:28:39.717-0400 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected tmpfs: /run from tmpfs (remote: false)
+2025-07-04T14:28:39.717-0400 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected ext4: / from /dev/sda8 (remote: false)
+2025-07-04T14:28:39.717-0400 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected securityfs: /sys/kernel/security from securityfs (remote: false)
+2025-07-04T14:28:39.717-0400 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected tmpfs: /dev/shm from tmpfs (remote: false)
+2025-07-04T14:28:39.717-0400 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected tmpfs: /run/lock from tmpfs (remote: false)
+2025-07-04T14:28:39.717-0400 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected cgroup2: /sys/fs/cgroup from cgroup2 (remote: false)
+2025-07-04T14:28:39.717-0400 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected pstore: /sys/fs/pstore from pstore (remote: false)
+2025-07-04T14:28:39.717-0400 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected efivarfs: /sys/firmware/efi/efivars from efivarfs (remote: false)
+2025-07-04T14:28:39.717-0400 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected bpf: /sys/fs/bpf from bpf (remote: false)
+2025-07-04T14:28:39.717-0400 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected autofs: /proc/sys/fs/binfmt_misc from systemd-1 (remote: false)
+2025-07-04T14:28:39.718-0400 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected debugfs: /sys/kernel/debug from debugfs (remote: false)
+2025-07-04T14:28:39.718-0400 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected mqueue: /dev/mqueue from mqueue (remote: false)
+2025-07-04T14:28:39.718-0400 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected hugetlbfs: /dev/hugepages from hugetlbfs (remote: false)
+2025-07-04T14:28:39.718-0400 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected tracefs: /sys/kernel/tracing from tracefs (remote: false)
+2025-07-04T14:28:39.718-0400 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected fusectl: /sys/fs/fuse/connections from fusectl (remote: false)
+2025-07-04T14:28:39.718-0400 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected configfs: /sys/kernel/config from configfs (remote: false)
+2025-07-04T14:28:39.718-0400 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected squashfs: /snap/core/17210 from /dev/loop0 (remote: false)
+2025-07-04T14:28:39.718-0400 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected squashfs: /snap/core20/2582 from /dev/loop1 (remote: false)
+2025-07-04T14:28:39.718-0400 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected squashfs: /snap/core18/2887 from /dev/loop2 (remote: false)
+2025-07-04T14:28:39.718-0400 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected squashfs: /snap/code/196 from /dev/loop3 (remote: false)
+2025-07-04T14:28:39.718-0400 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected squashfs: /snap/core22/1981 from /dev/loop5 (remote: false)
+2025-07-04T14:28:39.718-0400 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected squashfs: /snap/bare/5 from /dev/loop7 (remote: false)
+2025-07-04T14:28:39.718-0400 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected squashfs: /snap/gaming-graphics-core22/184 from /dev/loop8 (remote: false)
+2025-07-04T14:28:39.718-0400 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected squashfs: /snap/gtk-common-themes/1535 from /dev/loop10 (remote: false)
+2025-07-04T14:28:39.718-0400 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected squashfs: /snap/gnome-42-2204/202 from /dev/loop9 (remote: false)
+2025-07-04T14:28:39.719-0400 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected squashfs: /snap/node/4146 from /dev/loop11 (remote: false)
+2025-07-04T14:28:39.719-0400 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected squashfs: /snap/obs-studio/1302 from /dev/loop12 (remote: false)
+2025-07-04T14:28:39.719-0400 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected squashfs: /snap/snap-store/1248 from /dev/loop14 (remote: false)
+2025-07-04T14:28:39.719-0400 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected squashfs: /snap/openjdk/2220 from /dev/loop13 (remote: false)
+2025-07-04T14:28:39.719-0400 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected squashfs: /snap/snapd/24505 from /dev/loop15 (remote: false)
+2025-07-04T14:28:39.719-0400 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected squashfs: /snap/snapd-desktop-integration/253 from /dev/loop16 (remote: false)
+2025-07-04T14:28:39.719-0400 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected squashfs: /snap/snap-store/1270 from /dev/loop17 (remote: false)
+2025-07-04T14:28:39.719-0400 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected squashfs: /snap/snapd-desktop-integration/315 from /dev/loop21 (remote: false)
+2025-07-04T14:28:39.719-0400 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected squashfs: /snap/firefox/6436 from /dev/loop19 (remote: false)
+2025-07-04T14:28:39.719-0400 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected squashfs: /snap/core/17212 from /dev/loop20 (remote: false)
+2025-07-04T14:28:39.719-0400 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected squashfs: /snap/steam/206 from /dev/loop22 (remote: false)
+2025-07-04T14:28:39.719-0400 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected squashfs: /snap/thunderbird/737 from /dev/loop24 (remote: false)
+2025-07-04T14:28:39.719-0400 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected squashfs: /snap/code/198 from /dev/loop4 (remote: false)
+2025-07-04T14:28:39.719-0400 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected squashfs: /snap/core20/2599 from /dev/loop18 (remote: false)
+2025-07-04T14:28:39.719-0400 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected squashfs: /snap/firmware-updater/167 from /dev/loop6 (remote: false)
+2025-07-04T14:28:39.719-0400 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected squashfs: /snap/firefox/6421 from /dev/loop26 (remote: false)
+2025-07-04T14:28:39.720-0400 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected squashfs: /snap/snapd/24718 from /dev/loop27 (remote: false)
+2025-07-04T14:28:39.720-0400 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected squashfs: /snap/core22/2010 from /dev/loop25 (remote: false)
+2025-07-04T14:28:39.720-0400 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected vfat: /boot/efi from /dev/sda1 (remote: false)
+2025-07-04T14:28:39.720-0400 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected binfmt_misc: /proc/sys/fs/binfmt_misc from binfmt_misc (remote: false)
+2025-07-04T14:28:39.720-0400 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected tmpfs: /run/snapd/ns from tmpfs (remote: false)
+2025-07-04T14:28:39.720-0400 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected nsfs: /run/snapd/ns/snapd-desktop-integration.mnt from nsfs (remote: false)
+2025-07-04T14:28:39.720-0400 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected tmpfs: /run/user/1000 from tmpfs (remote: false)
+2025-07-04T14:28:39.720-0400 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected fuse.portal: /run/user/1000/doc from portal (remote: false)
+2025-07-04T14:28:39.720-0400 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected fuse.gvfsd-fuse: /run/user/1000/gvfs from gvfsd-fuse (remote: false)
+2025-07-04T14:28:39.720-0400 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected nsfs: /run/snapd/ns/firefox.mnt from nsfs (remote: false)
+2025-07-04T14:28:39.720-0400 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected squashfs: /snap/thunderbird/751 from /dev/loop28 (remote: false)
+2025-07-04T14:28:39.720-0400 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected nsfs: /run/snapd/ns/thunderbird.mnt from nsfs (remote: false)
+2025-07-04T14:28:39.721-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Build started for file system watching'
+2025-07-04T14:28:39.721-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Build started for file system watching' completed
+2025-07-04T14:28:39.721-0400 [INFO] [org.gradle.tooling.internal.provider.FileSystemWatchingBuildActionRunner] File system watching is active
+2025-07-04T14:28:39.721-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Load build' started
+2025-07-04T14:28:39.721-0400 [DEBUG] [org.gradle.initialization.properties.DefaultProjectPropertiesLoader] Found env project properties: []
+2025-07-04T14:28:39.722-0400 [DEBUG] [org.gradle.initialization.properties.DefaultProjectPropertiesLoader] Found system project properties: []
+2025-07-04T14:28:39.722-0400 [DEBUG] [org.gradle.initialization.DefaultSettingsLoader] Loading build definition for build: ':'
+2025-07-04T14:28:39.722-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Evaluate settings' started
+2025-07-04T14:28:39.723-0400 [INFO] [org.gradle.internal.buildevents.BuildLogger] Starting Build
+2025-07-04T14:28:39.723-0400 [DEBUG] [org.gradle.internal.buildevents.BuildLogger] Gradle user home: /home/virat/.gradle
+2025-07-04T14:28:39.723-0400 [DEBUG] [org.gradle.internal.buildevents.BuildLogger] Current dir: /home/virat/IdeaProjects/UltimateSwords
+2025-07-04T14:28:39.723-0400 [DEBUG] [org.gradle.internal.buildevents.BuildLogger] Settings file: null
+2025-07-04T14:28:39.723-0400 [DEBUG] [org.gradle.internal.buildevents.BuildLogger] Build file: null
+2025-07-04T14:28:39.724-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Apply settings file 'settings.gradle' to settings 'UltimateSwords'' started
+2025-07-04T14:28:39.725-0400 [DEBUG] [org.gradle.cache.internal.DefaultCacheCoordinator] Creating new cache for md5-checksums, path /home/virat/IdeaProjects/UltimateSwords/.gradle/8.12.1/checksums/md5-checksums.bin, access org.gradle.cache.internal.DefaultCacheCoordinator@75af5350
+2025-07-04T14:28:39.725-0400 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Acquiring file lock for checksums cache (/home/virat/IdeaProjects/UltimateSwords/.gradle/8.12.1/checksums)
+2025-07-04T14:28:39.725-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on checksums cache (/home/virat/IdeaProjects/UltimateSwords/.gradle/8.12.1/checksums).
+2025-07-04T14:28:39.725-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on checksums cache (/home/virat/IdeaProjects/UltimateSwords/.gradle/8.12.1/checksums).
+2025-07-04T14:28:39.725-0400 [DEBUG] [org.gradle.cache.internal.DefaultCacheCoordinator] Creating new cache for sha1-checksums, path /home/virat/IdeaProjects/UltimateSwords/.gradle/8.12.1/checksums/sha1-checksums.bin, access org.gradle.cache.internal.DefaultCacheCoordinator@75af5350
+2025-07-04T14:28:39.726-0400 [DEBUG] [org.gradle.cache.internal.DefaultCacheCoordinator] Creating new cache for sha256-checksums, path /home/virat/IdeaProjects/UltimateSwords/.gradle/8.12.1/checksums/sha256-checksums.bin, access org.gradle.cache.internal.DefaultCacheCoordinator@75af5350
+2025-07-04T14:28:39.726-0400 [DEBUG] [org.gradle.cache.internal.DefaultCacheCoordinator] Creating new cache for sha512-checksums, path /home/virat/IdeaProjects/UltimateSwords/.gradle/8.12.1/checksums/sha512-checksums.bin, access org.gradle.cache.internal.DefaultCacheCoordinator@75af5350
+2025-07-04T14:28:39.727-0400 [DEBUG] [org.gradle.cache.internal.DefaultCacheCoordinator] Creating new cache for workingDirs, path /home/virat/IdeaProjects/UltimateSwords/.gradle/8.12.1/vcsMetadata/workingDirs.bin, access org.gradle.cache.internal.DefaultCacheCoordinator@c37bc29
+2025-07-04T14:28:39.727-0400 [DEBUG] [org.gradle.api.internal.artifacts.mvnsettings.DefaultLocalMavenRepositoryLocator] No local repository in Settings file defined. Using default path: /home/virat/.m2/repository
+2025-07-04T14:28:39.729-0400 [DEBUG] [org.gradle.cache.internal.DefaultCacheCoordinator] Creating new cache for md-rule, path /home/virat/.gradle/caches/8.12.1/md-rule/md-rule.bin, access org.gradle.cache.internal.DefaultCacheCoordinator@253dd2ed
+2025-07-04T14:28:39.729-0400 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Acquiring file lock for cache directory md-rule (/home/virat/.gradle/caches/8.12.1/md-rule)
+2025-07-04T14:28:39.729-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on cache directory md-rule (/home/virat/.gradle/caches/8.12.1/md-rule).
+2025-07-04T14:28:39.729-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on cache directory md-rule (/home/virat/.gradle/caches/8.12.1/md-rule).
+2025-07-04T14:28:39.730-0400 [DEBUG] [org.gradle.cache.internal.DefaultCacheCoordinator] Creating new cache for md-supplier, path /home/virat/.gradle/caches/8.12.1/md-supplier/md-supplier.bin, access org.gradle.cache.internal.DefaultCacheCoordinator@378c88e2
+2025-07-04T14:28:39.730-0400 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Acquiring file lock for cache directory md-supplier (/home/virat/.gradle/caches/8.12.1/md-supplier)
+2025-07-04T14:28:39.730-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on cache directory md-supplier (/home/virat/.gradle/caches/8.12.1/md-supplier).
+2025-07-04T14:28:39.731-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on cache directory md-supplier (/home/virat/.gradle/caches/8.12.1/md-supplier).
+2025-07-04T14:28:39.733-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Apply settings file 'settings.gradle' to settings 'UltimateSwords''
+2025-07-04T14:28:39.733-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Apply settings file 'settings.gradle' to settings 'UltimateSwords'' completed
+2025-07-04T14:28:39.733-0400 [DEBUG] [org.gradle.initialization.ScriptEvaluatingSettingsProcessor] Timing: Processing settings took: 0.011 secs
+2025-07-04T14:28:39.733-0400 [INFO] [org.gradle.internal.buildevents.BuildLogger] Settings evaluated using settings file '/home/virat/IdeaProjects/UltimateSwords/settings.gradle'.
+2025-07-04T14:28:39.734-0400 [DEBUG] [org.gradle.internal.locking.LockFileReaderWriter] Lockfiles root: /home/virat/IdeaProjects/UltimateSwords/gradle/dependency-locks
+2025-07-04T14:28:39.735-0400 [DEBUG] [org.gradle.caching.configuration.internal.DefaultBuildCacheConfiguration] Found class org.gradle.caching.local.internal.DirectoryBuildCacheServiceFactory registered for class org.gradle.caching.local.DirectoryBuildCache
+2025-07-04T14:28:39.735-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Finalize build cache configuration' started
+2025-07-04T14:28:39.735-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Finalize build cache configuration'
+2025-07-04T14:28:39.735-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Finalize build cache configuration' completed
+2025-07-04T14:28:39.735-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Evaluate settings'
+2025-07-04T14:28:39.735-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Evaluate settings' completed
+2025-07-04T14:28:39.736-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Load build'
+2025-07-04T14:28:39.736-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Load build' completed
+2025-07-04T14:28:39.736-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Configure build' started
+2025-07-04T14:28:39.736-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Load projects' started
+2025-07-04T14:28:39.738-0400 [DEBUG] [org.gradle.initialization.ProjectPropertySettingBuildLoader] Looking for project properties from: /home/virat/IdeaProjects/UltimateSwords/gradle.properties
+2025-07-04T14:28:39.738-0400 [DEBUG] [org.gradle.initialization.ProjectPropertySettingBuildLoader] Adding project properties (if not overwritten by user properties): [yarn_mappings, fabric_api_version, loader_version, mod_version, mod_id, fabric_version, org.gradle.parallel, maven_group, archives_base_name, org.gradle.jvmargs, minecraft_version]
+2025-07-04T14:28:39.739-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Load projects'
+2025-07-04T14:28:39.739-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Load projects' completed
+2025-07-04T14:28:39.739-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Notify projectsLoaded listeners' started
+2025-07-04T14:28:39.740-0400 [INFO] [org.gradle.internal.buildevents.BuildLogger] Projects loaded. Root project using build file '/home/virat/IdeaProjects/UltimateSwords/build.gradle'.
+2025-07-04T14:28:39.740-0400 [INFO] [org.gradle.internal.buildevents.BuildLogger] Included projects: [root project 'UltimateSwords']
+2025-07-04T14:28:39.741-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Notify projectsLoaded listeners'
+2025-07-04T14:28:39.741-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Notify projectsLoaded listeners' completed
+2025-07-04T14:28:39.741-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Configure project :' started
+2025-07-04T14:28:39.741-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Notify beforeEvaluate listeners of :' started
+2025-07-04T14:28:39.742-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Notify beforeEvaluate listeners of :'
+2025-07-04T14:28:39.742-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Apply plugin org.gradle.help-tasks to root project 'UltimateSwords'' started
+2025-07-04T14:28:39.743-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :help' started
+2025-07-04T14:28:39.743-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Register task :help'
+2025-07-04T14:28:39.744-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :projects' started
+2025-07-04T14:28:39.744-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Register task :projects'
+2025-07-04T14:28:39.744-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :tasks' started
+2025-07-04T14:28:39.744-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Register task :tasks'
+2025-07-04T14:28:39.745-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :properties' started
+2025-07-04T14:28:39.745-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Register task :properties'
+2025-07-04T14:28:39.745-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :dependencyInsight' started
+2025-07-04T14:28:39.745-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Register task :dependencyInsight'
+2025-07-04T14:28:39.745-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :dependencies' started
+2025-07-04T14:28:39.746-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Register task :dependencies'
+2025-07-04T14:28:39.746-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :buildEnvironment' started
+2025-07-04T14:28:39.746-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Register task :buildEnvironment'
+2025-07-04T14:28:39.746-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :components' started
+2025-07-04T14:28:39.746-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Register task :components'
+2025-07-04T14:28:39.747-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :model' started
+2025-07-04T14:28:39.747-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Register task :model'
+2025-07-04T14:28:39.747-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :dependentComponents' started
+2025-07-04T14:28:39.747-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Register task :dependentComponents'
+2025-07-04T14:28:39.748-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :outgoingVariants' started
+2025-07-04T14:28:39.748-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Register task :outgoingVariants'
+2025-07-04T14:28:39.748-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :resolvableConfigurations' started
+2025-07-04T14:28:39.749-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Register task :resolvableConfigurations'
+2025-07-04T14:28:39.749-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Apply plugin org.gradle.help-tasks to root project 'UltimateSwords''
+2025-07-04T14:28:39.749-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :javaToolchains' started
+2025-07-04T14:28:39.749-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Register task :javaToolchains'
+2025-07-04T14:28:39.750-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :prepareKotlinBuildScriptModel' started
+2025-07-04T14:28:39.750-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Register task :prepareKotlinBuildScriptModel'
+2025-07-04T14:28:39.750-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :updateDaemonJvm' started
+2025-07-04T14:28:39.751-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Register task :updateDaemonJvm'
+2025-07-04T14:28:39.751-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Apply plugin org.gradle.build-init to root project 'UltimateSwords'' started
+2025-07-04T14:28:39.751-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :init' started
+2025-07-04T14:28:39.751-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Register task :init'
+2025-07-04T14:28:39.752-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Apply plugin org.gradle.build-init to root project 'UltimateSwords''
+2025-07-04T14:28:39.752-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Apply plugin org.gradle.wrapper to root project 'UltimateSwords'' started
+2025-07-04T14:28:39.753-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :wrapper' started
+2025-07-04T14:28:39.753-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Register task :wrapper'
+2025-07-04T14:28:39.753-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Apply plugin org.gradle.wrapper to root project 'UltimateSwords''
+2025-07-04T14:28:39.754-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Apply build file 'build.gradle' to root project 'UltimateSwords'' started
+2025-07-04T14:28:39.762-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Resolve dependencies of detachedConfiguration1' started
+2025-07-04T14:28:39.767-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Download https://maven.fabricmc.net/fabric-loom/fabric-loom.gradle.plugin/1.7.0/fabric-loom.gradle.plugin-1.7.0.pom' started
+2025-07-04T14:28:39.862-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Download https://maven.fabricmc.net/fabric-loom/fabric-loom.gradle.plugin/1.7.0/fabric-loom.gradle.plugin-1.7.0.pom'
+2025-07-04T14:28:39.864-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Download https://plugins.gradle.org/m2/fabric-loom/fabric-loom.gradle.plugin/1.7.0/fabric-loom.gradle.plugin-1.7.0.pom' started
+2025-07-04T14:28:40.053-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Download https://plugins.gradle.org/m2/fabric-loom/fabric-loom.gradle.plugin/1.7.0/fabric-loom.gradle.plugin-1.7.0.pom'
+2025-07-04T14:28:40.055-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Download https://repo.maven.apache.org/maven2/fabric-loom/fabric-loom.gradle.plugin/1.7.0/fabric-loom.gradle.plugin-1.7.0.pom' started
+2025-07-04T14:28:40.087-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Download https://repo.maven.apache.org/maven2/fabric-loom/fabric-loom.gradle.plugin/1.7.0/fabric-loom.gradle.plugin-1.7.0.pom'
+2025-07-04T14:28:40.088-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Resolve dependencies of detachedConfiguration1'
+2025-07-04T14:28:40.088-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Resolve files of configuration 'detachedConfiguration1'' started
+2025-07-04T14:28:40.089-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Resolve files of configuration 'detachedConfiguration1''
+2025-07-04T14:28:40.089-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Apply build file 'build.gradle' to root project 'UltimateSwords''
+2025-07-04T14:28:40.089-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Notify afterEvaluate listeners of :' started
+2025-07-04T14:28:40.090-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Notify afterEvaluate listeners of :'
+2025-07-04T14:28:39.741-0400 [LIFECYCLE] [org.gradle.internal.logging.progress.ProgressLoggerFactory] 
+2025-07-04T14:28:39.741-0400 [LIFECYCLE] [org.gradle.internal.logging.progress.ProgressLoggerFactory] > Configure project :
+2025-07-04T14:28:39.741-0400 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Daemon worker: acquired lock on state of project :
+2025-07-04T14:28:39.742-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Notify beforeEvaluate listeners of :' completed
+2025-07-04T14:28:39.743-0400 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Project : - Transitioning model element '<root>' from state Registered to Created
+2025-07-04T14:28:39.743-0400 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Project : - Transitioning model element '<root>' to state Discovered.
+2025-07-04T14:28:39.743-0400 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Project : - Transitioning model element '<root>' to state Created.
+2025-07-04T14:28:39.744-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :help' completed
+2025-07-04T14:28:39.744-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :projects' completed
+2025-07-04T14:28:39.744-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :tasks' completed
+2025-07-04T14:28:39.745-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :properties' completed
+2025-07-04T14:28:39.745-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :dependencyInsight' completed
+2025-07-04T14:28:39.746-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :dependencies' completed
+2025-07-04T14:28:39.746-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :buildEnvironment' completed
+2025-07-04T14:28:39.746-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :components' completed
+2025-07-04T14:28:39.747-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :model' completed
+2025-07-04T14:28:39.747-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :dependentComponents' completed
+2025-07-04T14:28:39.748-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :outgoingVariants' completed
+2025-07-04T14:28:39.749-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :resolvableConfigurations' completed
+2025-07-04T14:28:39.749-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Apply plugin org.gradle.help-tasks to root project 'UltimateSwords'' completed
+2025-07-04T14:28:39.750-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :javaToolchains' completed
+2025-07-04T14:28:39.750-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :prepareKotlinBuildScriptModel' completed
+2025-07-04T14:28:39.751-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :updateDaemonJvm' completed
+2025-07-04T14:28:39.752-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :init' completed
+2025-07-04T14:28:39.752-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Apply plugin org.gradle.build-init to root project 'UltimateSwords'' completed
+2025-07-04T14:28:39.753-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Register task :wrapper' completed
+2025-07-04T14:28:39.753-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Apply plugin org.gradle.wrapper to root project 'UltimateSwords'' completed
+2025-07-04T14:28:39.753-0400 [INFO] [org.gradle.configuration.project.BuildScriptProcessor] Evaluating root project 'UltimateSwords' using build file '/home/virat/IdeaProjects/UltimateSwords/build.gradle'.
+2025-07-04T14:28:39.756-0400 [DEBUG] [org.gradle.internal.locking.LockFileReaderWriter] Lockfiles root: /home/virat/IdeaProjects/UltimateSwords/gradle/dependency-locks
+2025-07-04T14:28:39.764-0400 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.modulecache.ResolvedArtifactCaches] Creating new in-memory cache for repo 'Fabric' [c5f7e3fe759bfc29dcb6fc6baddbbc5f].
+2025-07-04T14:28:39.764-0400 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.modulecache.ResolvedArtifactCaches] Creating new in-memory cache for repo 'Gradle Central Plugin Repository' [2f8748e965ecb2135dad092e9ef808de].
+2025-07-04T14:28:39.764-0400 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.modulecache.ResolvedArtifactCaches] Creating new in-memory cache for repo 'MavenRepo' [26c913274550a0b2221f47a0fe2d2358].
+2025-07-04T14:28:39.764-0400 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.builder.DependencyGraphBuilder] Visiting configuration unspecified:unspecified:unspecified(detachedConfiguration1).
+2025-07-04T14:28:39.767-0400 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.RepositoryChainComponentMetaDataResolver] Attempting to resolve component for fabric-loom:fabric-loom.gradle.plugin:1.7.0 using repositories [Fabric, Gradle Central Plugin Repository, MavenRepo]
+2025-07-04T14:28:39.767-0400 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleComponentRepository] Cached meta-data for missing module is expired: will perform fresh resolve of 'fabric-loom:fabric-loom.gradle.plugin:1.7.0' in 'Fabric'
+2025-07-04T14:28:39.767-0400 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.DefaultExternalResourceArtifactResolver] Loading https://maven.fabricmc.net/fabric-loom/fabric-loom.gradle.plugin/1.7.0/fabric-loom.gradle.plugin-1.7.0.pom
+2025-07-04T14:28:39.767-0400 [DEBUG] [org.gradle.internal.resource.transfer.DefaultCacheAwareExternalResourceAccessor] Constructing external resource: https://maven.fabricmc.net/fabric-loom/fabric-loom.gradle.plugin/1.7.0/fabric-loom.gradle.plugin-1.7.0.pom
+2025-07-04T14:28:39.768-0400 [DEBUG] [org.gradle.internal.resource.transport.http.HttpResourceAccessor] Constructing external resource: https://maven.fabricmc.net/fabric-loom/fabric-loom.gradle.plugin/1.7.0/fabric-loom.gradle.plugin-1.7.0.pom
+2025-07-04T14:28:39.768-0400 [DEBUG] [org.gradle.internal.resource.transport.http.HttpClientHelper] Performing HTTP GET: https://maven.fabricmc.net/fabric-loom/fabric-loom.gradle.plugin/1.7.0/fabric-loom.gradle.plugin-1.7.0.pom
+2025-07-04T14:28:39.769-0400 [DEBUG] [org.apache.http.client.protocol.RequestAddCookies] CookieSpec selected: default
+2025-07-04T14:28:39.769-0400 [DEBUG] [org.apache.http.client.protocol.RequestAuthCache] Auth cache not set in the context
+2025-07-04T14:28:39.769-0400 [DEBUG] [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] Connection request: [route: {s}->https://maven.fabricmc.net:443][total available: 0; route allocated: 0 of 20; total allocated: 0 of 20]
+2025-07-04T14:28:39.770-0400 [DEBUG] [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] Connection leased: [id: 4][route: {s}->https://maven.fabricmc.net:443][total available: 0; route allocated: 1 of 20; total allocated: 1 of 20]
+2025-07-04T14:28:39.770-0400 [DEBUG] [org.apache.http.impl.execchain.MainClientExec] Opening connection {s}->https://maven.fabricmc.net:443
+2025-07-04T14:28:39.770-0400 [DEBUG] [org.apache.http.impl.conn.DefaultHttpClientConnectionOperator] Connecting to maven.fabricmc.net/104.21.33.240:443
+2025-07-04T14:28:39.770-0400 [DEBUG] [org.apache.http.conn.ssl.SSLConnectionSocketFactory] Connecting socket to maven.fabricmc.net/104.21.33.240:443 with timeout 30000
+2025-07-04T14:28:39.793-0400 [DEBUG] [org.apache.http.conn.ssl.SSLConnectionSocketFactory] Enabled protocols: [TLSv1.2, TLSv1.3]
+2025-07-04T14:28:39.793-0400 [DEBUG] [org.apache.http.conn.ssl.SSLConnectionSocketFactory] Enabled cipher suites:[TLS_AES_256_GCM_SHA384, TLS_AES_128_GCM_SHA256, TLS_CHACHA20_POLY1305_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_CHACHA20_POLY1305_SHA256, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+2025-07-04T14:28:39.793-0400 [DEBUG] [org.apache.http.conn.ssl.SSLConnectionSocketFactory] Starting handshake
+2025-07-04T14:28:39.825-0400 [DEBUG] [org.apache.http.conn.ssl.SSLConnectionSocketFactory] Secure session established
+2025-07-04T14:28:39.826-0400 [DEBUG] [org.apache.http.conn.ssl.SSLConnectionSocketFactory]  negotiated protocol: TLSv1.3
+2025-07-04T14:28:39.826-0400 [DEBUG] [org.apache.http.conn.ssl.SSLConnectionSocketFactory]  negotiated cipher suite: TLS_AES_256_GCM_SHA384
+2025-07-04T14:28:39.826-0400 [DEBUG] [org.apache.http.conn.ssl.SSLConnectionSocketFactory]  peer principal: CN=fabricmc.net
+2025-07-04T14:28:39.826-0400 [DEBUG] [org.apache.http.conn.ssl.SSLConnectionSocketFactory]  peer alternative names: [fabricmc.net, *.fabricmc.net]
+2025-07-04T14:28:39.826-0400 [DEBUG] [org.apache.http.conn.ssl.SSLConnectionSocketFactory]  issuer principal: CN=WE1, O=Google Trust Services, C=US
+2025-07-04T14:28:39.827-0400 [DEBUG] [org.apache.http.impl.conn.DefaultHttpClientConnectionOperator] Connection established 192.168.1.196:40406<->104.21.33.240:443
+2025-07-04T14:28:39.827-0400 [DEBUG] [org.apache.http.impl.conn.DefaultManagedHttpClientConnection] http-outgoing-4: set socket timeout to 30000
+2025-07-04T14:28:39.827-0400 [DEBUG] [org.apache.http.impl.execchain.MainClientExec] Executing request GET /fabric-loom/fabric-loom.gradle.plugin/1.7.0/fabric-loom.gradle.plugin-1.7.0.pom HTTP/1.1
+2025-07-04T14:28:39.827-0400 [DEBUG] [org.apache.http.impl.execchain.MainClientExec] Target auth state: UNCHALLENGED
+2025-07-04T14:28:39.827-0400 [DEBUG] [org.apache.http.impl.execchain.MainClientExec] Proxy auth state: UNCHALLENGED
+2025-07-04T14:28:39.861-0400 [DEBUG] [org.apache.http.impl.execchain.MainClientExec] Connection can be kept alive indefinitely
+2025-07-04T14:28:39.861-0400 [DEBUG] [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] Connection [id: 4][route: {s}->https://maven.fabricmc.net:443] can be kept alive indefinitely
+2025-07-04T14:28:39.861-0400 [DEBUG] [org.apache.http.impl.conn.DefaultManagedHttpClientConnection] http-outgoing-4: set socket timeout to 0
+2025-07-04T14:28:39.862-0400 [DEBUG] [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] Connection released: [id: 4][route: {s}->https://maven.fabricmc.net:443][total available: 1; route allocated: 1 of 20; total allocated: 1 of 20]
+2025-07-04T14:28:39.862-0400 [INFO] [org.gradle.internal.resource.transport.http.HttpClientHelper] Resource missing. [HTTP GET: https://maven.fabricmc.net/fabric-loom/fabric-loom.gradle.plugin/1.7.0/fabric-loom.gradle.plugin-1.7.0.pom]
+2025-07-04T14:28:39.862-0400 [DEBUG] [org.gradle.internal.resource.transport.http.HttpResponseResource] Attempting to download resource https://maven.fabricmc.net/fabric-loom/fabric-loom.gradle.plugin/1.7.0/fabric-loom.gradle.plugin-1.7.0.pom.
+2025-07-04T14:28:39.862-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Download https://maven.fabricmc.net/fabric-loom/fabric-loom.gradle.plugin/1.7.0/fabric-loom.gradle.plugin-1.7.0.pom' completed
+2025-07-04T14:28:39.862-0400 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] No meta-data file or artifact found for module 'fabric-loom:fabric-loom.gradle.plugin:1.7.0' in repository 'Fabric'.
+2025-07-04T14:28:39.862-0400 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.modulecache.PersistentModuleMetadataCache] Recording absence of module descriptor in cache: fabric-loom:fabric-loom.gradle.plugin:1.7.0 [changing = false]
+2025-07-04T14:28:39.863-0400 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleComponentRepository] Cached meta-data for missing module is expired: will perform fresh resolve of 'fabric-loom:fabric-loom.gradle.plugin:1.7.0' in 'Gradle Central Plugin Repository'
+2025-07-04T14:28:39.864-0400 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.DefaultExternalResourceArtifactResolver] Loading https://plugins.gradle.org/m2/fabric-loom/fabric-loom.gradle.plugin/1.7.0/fabric-loom.gradle.plugin-1.7.0.pom
+2025-07-04T14:28:39.864-0400 [DEBUG] [org.gradle.internal.resource.transfer.DefaultCacheAwareExternalResourceAccessor] Constructing external resource: https://plugins.gradle.org/m2/fabric-loom/fabric-loom.gradle.plugin/1.7.0/fabric-loom.gradle.plugin-1.7.0.pom
+2025-07-04T14:28:39.864-0400 [DEBUG] [org.gradle.internal.resource.transport.http.HttpResourceAccessor] Constructing external resource: https://plugins.gradle.org/m2/fabric-loom/fabric-loom.gradle.plugin/1.7.0/fabric-loom.gradle.plugin-1.7.0.pom
+2025-07-04T14:28:39.864-0400 [DEBUG] [org.gradle.internal.resource.transport.http.HttpClientHelper] Performing HTTP GET: https://plugins.gradle.org/m2/fabric-loom/fabric-loom.gradle.plugin/1.7.0/fabric-loom.gradle.plugin-1.7.0.pom
+2025-07-04T14:28:39.865-0400 [DEBUG] [org.apache.http.client.protocol.RequestAddCookies] CookieSpec selected: default
+2025-07-04T14:28:39.865-0400 [DEBUG] [org.apache.http.client.protocol.RequestAuthCache] Auth cache not set in the context
+2025-07-04T14:28:39.865-0400 [DEBUG] [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] Connection request: [route: {s}->https://plugins.gradle.org:443][total available: 0; route allocated: 0 of 20; total allocated: 0 of 20]
+2025-07-04T14:28:39.865-0400 [DEBUG] [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] Connection leased: [id: 5][route: {s}->https://plugins.gradle.org:443][total available: 0; route allocated: 1 of 20; total allocated: 1 of 20]
+2025-07-04T14:28:39.865-0400 [DEBUG] [org.apache.http.impl.execchain.MainClientExec] Opening connection {s}->https://plugins.gradle.org:443
+2025-07-04T14:28:39.865-0400 [DEBUG] [org.apache.http.impl.conn.DefaultHttpClientConnectionOperator] Connecting to plugins.gradle.org/104.16.73.101:443
+2025-07-04T14:28:39.865-0400 [DEBUG] [org.apache.http.conn.ssl.SSLConnectionSocketFactory] Connecting socket to plugins.gradle.org/104.16.73.101:443 with timeout 30000
+2025-07-04T14:28:39.889-0400 [DEBUG] [org.apache.http.conn.ssl.SSLConnectionSocketFactory] Enabled protocols: [TLSv1.2, TLSv1.3]
+2025-07-04T14:28:39.889-0400 [DEBUG] [org.apache.http.conn.ssl.SSLConnectionSocketFactory] Enabled cipher suites:[TLS_AES_256_GCM_SHA384, TLS_AES_128_GCM_SHA256, TLS_CHACHA20_POLY1305_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_CHACHA20_POLY1305_SHA256, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+2025-07-04T14:28:39.889-0400 [DEBUG] [org.apache.http.conn.ssl.SSLConnectionSocketFactory] Starting handshake
+2025-07-04T14:28:39.915-0400 [DEBUG] [org.apache.http.conn.ssl.SSLConnectionSocketFactory] Secure session established
+2025-07-04T14:28:39.915-0400 [DEBUG] [org.apache.http.conn.ssl.SSLConnectionSocketFactory]  negotiated protocol: TLSv1.2
+2025-07-04T14:28:39.915-0400 [DEBUG] [org.apache.http.conn.ssl.SSLConnectionSocketFactory]  negotiated cipher suite: TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256
+2025-07-04T14:28:39.915-0400 [DEBUG] [org.apache.http.conn.ssl.SSLConnectionSocketFactory]  peer principal: CN=gradle.org
+2025-07-04T14:28:39.915-0400 [DEBUG] [org.apache.http.conn.ssl.SSLConnectionSocketFactory]  peer alternative names: [gradle.org, *.gradle.org]
+2025-07-04T14:28:39.915-0400 [DEBUG] [org.apache.http.conn.ssl.SSLConnectionSocketFactory]  issuer principal: CN=WE1, O=Google Trust Services, C=US
+2025-07-04T14:28:39.916-0400 [DEBUG] [org.apache.http.impl.conn.DefaultHttpClientConnectionOperator] Connection established 192.168.1.196:50338<->104.16.73.101:443
+2025-07-04T14:28:39.916-0400 [DEBUG] [org.apache.http.impl.conn.DefaultManagedHttpClientConnection] http-outgoing-5: set socket timeout to 30000
+2025-07-04T14:28:39.916-0400 [DEBUG] [org.apache.http.impl.execchain.MainClientExec] Executing request GET /m2/fabric-loom/fabric-loom.gradle.plugin/1.7.0/fabric-loom.gradle.plugin-1.7.0.pom HTTP/1.1
+2025-07-04T14:28:39.916-0400 [DEBUG] [org.apache.http.impl.execchain.MainClientExec] Target auth state: UNCHALLENGED
+2025-07-04T14:28:39.916-0400 [DEBUG] [org.apache.http.impl.execchain.MainClientExec] Proxy auth state: UNCHALLENGED
+2025-07-04T14:28:39.950-0400 [DEBUG] [org.apache.http.impl.execchain.MainClientExec] Connection can be kept alive indefinitely
+2025-07-04T14:28:39.950-0400 [DEBUG] [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] Connection [id: 5][route: {s}->https://plugins.gradle.org:443] can be kept alive indefinitely
+2025-07-04T14:28:39.950-0400 [DEBUG] [org.apache.http.impl.conn.DefaultManagedHttpClientConnection] http-outgoing-5: set socket timeout to 0
+2025-07-04T14:28:39.950-0400 [DEBUG] [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] Connection released: [id: 5][route: {s}->https://plugins.gradle.org:443][total available: 1; route allocated: 1 of 20; total allocated: 1 of 20]
+2025-07-04T14:28:39.950-0400 [DEBUG] [org.gradle.internal.resource.transport.http.AlwaysFollowAndPreserveMethodRedirectStrategy] Redirect requested to location 'https://repo.maven.apache.org/maven2/fabric-loom/fabric-loom.gradle.plugin/1.7.0/fabric-loom.gradle.plugin-1.7.0.pom'
+2025-07-04T14:28:39.951-0400 [DEBUG] [org.apache.http.impl.execchain.RedirectExec] Resetting target auth state
+2025-07-04T14:28:39.951-0400 [DEBUG] [org.apache.http.impl.execchain.RedirectExec] Redirecting to 'https://repo.maven.apache.org/maven2/fabric-loom/fabric-loom.gradle.plugin/1.7.0/fabric-loom.gradle.plugin-1.7.0.pom' via {s}->https://repo.maven.apache.org:443
+2025-07-04T14:28:39.951-0400 [DEBUG] [org.apache.http.client.protocol.RequestAddCookies] CookieSpec selected: default
+2025-07-04T14:28:39.951-0400 [DEBUG] [org.apache.http.client.protocol.RequestAuthCache] Auth cache not set in the context
+2025-07-04T14:28:39.951-0400 [DEBUG] [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] Connection request: [route: {s}->https://repo.maven.apache.org:443][total available: 1; route allocated: 0 of 20; total allocated: 1 of 20]
+2025-07-04T14:28:39.951-0400 [DEBUG] [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] Connection leased: [id: 6][route: {s}->https://repo.maven.apache.org:443][total available: 1; route allocated: 1 of 20; total allocated: 2 of 20]
+2025-07-04T14:28:39.951-0400 [DEBUG] [org.apache.http.impl.execchain.MainClientExec] Opening connection {s}->https://repo.maven.apache.org:443
+2025-07-04T14:28:39.951-0400 [DEBUG] [org.apache.http.impl.conn.DefaultHttpClientConnectionOperator] Connecting to repo.maven.apache.org/151.101.128.215:443
+2025-07-04T14:28:39.951-0400 [DEBUG] [org.apache.http.conn.ssl.SSLConnectionSocketFactory] Connecting socket to repo.maven.apache.org/151.101.128.215:443 with timeout 30000
+2025-07-04T14:28:39.972-0400 [DEBUG] [org.apache.http.conn.ssl.SSLConnectionSocketFactory] Enabled protocols: [TLSv1.2, TLSv1.3]
+2025-07-04T14:28:39.972-0400 [DEBUG] [org.apache.http.conn.ssl.SSLConnectionSocketFactory] Enabled cipher suites:[TLS_AES_256_GCM_SHA384, TLS_AES_128_GCM_SHA256, TLS_CHACHA20_POLY1305_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_CHACHA20_POLY1305_SHA256, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+2025-07-04T14:28:39.972-0400 [DEBUG] [org.apache.http.conn.ssl.SSLConnectionSocketFactory] Starting handshake
+2025-07-04T14:28:40.026-0400 [DEBUG] [org.apache.http.conn.ssl.SSLConnectionSocketFactory] Secure session established
+2025-07-04T14:28:40.026-0400 [DEBUG] [org.apache.http.conn.ssl.SSLConnectionSocketFactory]  negotiated protocol: TLSv1.2
+2025-07-04T14:28:40.026-0400 [DEBUG] [org.apache.http.conn.ssl.SSLConnectionSocketFactory]  negotiated cipher suite: TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256
+2025-07-04T14:28:40.026-0400 [DEBUG] [org.apache.http.conn.ssl.SSLConnectionSocketFactory]  peer principal: CN=repo.maven.apache.org
+2025-07-04T14:28:40.026-0400 [DEBUG] [org.apache.http.conn.ssl.SSLConnectionSocketFactory]  peer alternative names: [repo.maven.apache.org]
+2025-07-04T14:28:40.027-0400 [DEBUG] [org.apache.http.conn.ssl.SSLConnectionSocketFactory]  issuer principal: CN=GlobalSign Atlas R3 DV TLS CA 2024 Q4, O=GlobalSign nv-sa, C=BE
+2025-07-04T14:28:40.027-0400 [DEBUG] [org.apache.http.impl.conn.DefaultHttpClientConnectionOperator] Connection established 192.168.1.196:57022<->151.101.128.215:443
+2025-07-04T14:28:40.027-0400 [DEBUG] [org.apache.http.impl.conn.DefaultManagedHttpClientConnection] http-outgoing-6: set socket timeout to 30000
+2025-07-04T14:28:40.027-0400 [DEBUG] [org.apache.http.impl.execchain.MainClientExec] Executing request GET /maven2/fabric-loom/fabric-loom.gradle.plugin/1.7.0/fabric-loom.gradle.plugin-1.7.0.pom HTTP/1.1
+2025-07-04T14:28:40.027-0400 [DEBUG] [org.apache.http.impl.execchain.MainClientExec] Target auth state: UNCHALLENGED
+2025-07-04T14:28:40.027-0400 [DEBUG] [org.apache.http.impl.execchain.MainClientExec] Proxy auth state: UNCHALLENGED
+2025-07-04T14:28:40.052-0400 [DEBUG] [org.apache.http.impl.execchain.MainClientExec] Connection can be kept alive indefinitely
+2025-07-04T14:28:40.052-0400 [DEBUG] [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] Connection [id: 6][route: {s}->https://repo.maven.apache.org:443] can be kept alive indefinitely
+2025-07-04T14:28:40.052-0400 [DEBUG] [org.apache.http.impl.conn.DefaultManagedHttpClientConnection] http-outgoing-6: set socket timeout to 0
+2025-07-04T14:28:40.052-0400 [DEBUG] [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] Connection released: [id: 6][route: {s}->https://repo.maven.apache.org:443][total available: 2; route allocated: 1 of 20; total allocated: 2 of 20]
+2025-07-04T14:28:40.053-0400 [INFO] [org.gradle.internal.resource.transport.http.HttpClientHelper] Resource missing. [HTTP GET: https://repo.maven.apache.org/maven2/fabric-loom/fabric-loom.gradle.plugin/1.7.0/fabric-loom.gradle.plugin-1.7.0.pom]
+2025-07-04T14:28:40.053-0400 [DEBUG] [org.gradle.internal.resource.transport.http.HttpResponseResource] Attempting to download resource https://plugins.gradle.org/m2/fabric-loom/fabric-loom.gradle.plugin/1.7.0/fabric-loom.gradle.plugin-1.7.0.pom.
+2025-07-04T14:28:40.053-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Download https://plugins.gradle.org/m2/fabric-loom/fabric-loom.gradle.plugin/1.7.0/fabric-loom.gradle.plugin-1.7.0.pom' completed
+2025-07-04T14:28:40.053-0400 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] No meta-data file or artifact found for module 'fabric-loom:fabric-loom.gradle.plugin:1.7.0' in repository 'Gradle Central Plugin Repository'.
+2025-07-04T14:28:40.054-0400 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.modulecache.PersistentModuleMetadataCache] Recording absence of module descriptor in cache: fabric-loom:fabric-loom.gradle.plugin:1.7.0 [changing = false]
+2025-07-04T14:28:40.054-0400 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleComponentRepository] Cached meta-data for missing module is expired: will perform fresh resolve of 'fabric-loom:fabric-loom.gradle.plugin:1.7.0' in 'MavenRepo'
+2025-07-04T14:28:40.054-0400 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.DefaultExternalResourceArtifactResolver] Loading https://repo.maven.apache.org/maven2/fabric-loom/fabric-loom.gradle.plugin/1.7.0/fabric-loom.gradle.plugin-1.7.0.pom
+2025-07-04T14:28:40.054-0400 [DEBUG] [org.gradle.internal.resource.transfer.DefaultCacheAwareExternalResourceAccessor] Constructing external resource: https://repo.maven.apache.org/maven2/fabric-loom/fabric-loom.gradle.plugin/1.7.0/fabric-loom.gradle.plugin-1.7.0.pom
+2025-07-04T14:28:40.055-0400 [DEBUG] [org.gradle.internal.resource.transport.http.HttpResourceAccessor] Constructing external resource: https://repo.maven.apache.org/maven2/fabric-loom/fabric-loom.gradle.plugin/1.7.0/fabric-loom.gradle.plugin-1.7.0.pom
+2025-07-04T14:28:40.055-0400 [DEBUG] [org.gradle.internal.resource.transport.http.HttpClientHelper] Performing HTTP GET: https://repo.maven.apache.org/maven2/fabric-loom/fabric-loom.gradle.plugin/1.7.0/fabric-loom.gradle.plugin-1.7.0.pom
+2025-07-04T14:28:40.056-0400 [DEBUG] [org.apache.http.client.protocol.RequestAddCookies] CookieSpec selected: default
+2025-07-04T14:28:40.056-0400 [DEBUG] [org.apache.http.client.protocol.RequestAuthCache] Auth cache not set in the context
+2025-07-04T14:28:40.056-0400 [DEBUG] [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] Connection request: [route: {s}->https://repo.maven.apache.org:443][total available: 0; route allocated: 0 of 20; total allocated: 0 of 20]
+2025-07-04T14:28:40.056-0400 [DEBUG] [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] Connection leased: [id: 7][route: {s}->https://repo.maven.apache.org:443][total available: 0; route allocated: 1 of 20; total allocated: 1 of 20]
+2025-07-04T14:28:40.056-0400 [DEBUG] [org.apache.http.impl.execchain.MainClientExec] Opening connection {s}->https://repo.maven.apache.org:443
+2025-07-04T14:28:40.056-0400 [DEBUG] [org.apache.http.impl.conn.DefaultHttpClientConnectionOperator] Connecting to repo.maven.apache.org/151.101.128.215:443
+2025-07-04T14:28:40.056-0400 [DEBUG] [org.apache.http.conn.ssl.SSLConnectionSocketFactory] Connecting socket to repo.maven.apache.org/151.101.128.215:443 with timeout 30000
+2025-07-04T14:28:40.066-0400 [DEBUG] [org.apache.http.conn.ssl.SSLConnectionSocketFactory] Enabled protocols: [TLSv1.2, TLSv1.3]
+2025-07-04T14:28:40.066-0400 [DEBUG] [org.apache.http.conn.ssl.SSLConnectionSocketFactory] Enabled cipher suites:[TLS_AES_256_GCM_SHA384, TLS_AES_128_GCM_SHA256, TLS_CHACHA20_POLY1305_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_CHACHA20_POLY1305_SHA256, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+2025-07-04T14:28:40.066-0400 [DEBUG] [org.apache.http.conn.ssl.SSLConnectionSocketFactory] Starting handshake
+2025-07-04T14:28:40.077-0400 [DEBUG] [org.apache.http.conn.ssl.SSLConnectionSocketFactory] Secure session established
+2025-07-04T14:28:40.077-0400 [DEBUG] [org.apache.http.conn.ssl.SSLConnectionSocketFactory]  negotiated protocol: TLSv1.2
+2025-07-04T14:28:40.077-0400 [DEBUG] [org.apache.http.conn.ssl.SSLConnectionSocketFactory]  negotiated cipher suite: TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256
+2025-07-04T14:28:40.077-0400 [DEBUG] [org.apache.http.conn.ssl.SSLConnectionSocketFactory]  peer principal: CN=repo.maven.apache.org
+2025-07-04T14:28:40.078-0400 [DEBUG] [org.apache.http.conn.ssl.SSLConnectionSocketFactory]  peer alternative names: [repo.maven.apache.org]
+2025-07-04T14:28:40.078-0400 [DEBUG] [org.apache.http.conn.ssl.SSLConnectionSocketFactory]  issuer principal: CN=GlobalSign Atlas R3 DV TLS CA 2024 Q4, O=GlobalSign nv-sa, C=BE
+2025-07-04T14:28:40.078-0400 [DEBUG] [org.apache.http.impl.conn.DefaultHttpClientConnectionOperator] Connection established 192.168.1.196:57028<->151.101.128.215:443
+2025-07-04T14:28:40.078-0400 [DEBUG] [org.apache.http.impl.conn.DefaultManagedHttpClientConnection] http-outgoing-7: set socket timeout to 30000
+2025-07-04T14:28:40.078-0400 [DEBUG] [org.apache.http.impl.execchain.MainClientExec] Executing request GET /maven2/fabric-loom/fabric-loom.gradle.plugin/1.7.0/fabric-loom.gradle.plugin-1.7.0.pom HTTP/1.1
+2025-07-04T14:28:40.078-0400 [DEBUG] [org.apache.http.impl.execchain.MainClientExec] Target auth state: UNCHALLENGED
+2025-07-04T14:28:40.078-0400 [DEBUG] [org.apache.http.impl.execchain.MainClientExec] Proxy auth state: UNCHALLENGED
+2025-07-04T14:28:40.086-0400 [DEBUG] [org.apache.http.impl.execchain.MainClientExec] Connection can be kept alive indefinitely
+2025-07-04T14:28:40.087-0400 [DEBUG] [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] Connection [id: 7][route: {s}->https://repo.maven.apache.org:443] can be kept alive indefinitely
+2025-07-04T14:28:40.087-0400 [DEBUG] [org.apache.http.impl.conn.DefaultManagedHttpClientConnection] http-outgoing-7: set socket timeout to 0
+2025-07-04T14:28:40.087-0400 [DEBUG] [org.apache.http.impl.conn.PoolingHttpClientConnectionManager] Connection released: [id: 7][route: {s}->https://repo.maven.apache.org:443][total available: 1; route allocated: 1 of 20; total allocated: 1 of 20]
+2025-07-04T14:28:40.087-0400 [INFO] [org.gradle.internal.resource.transport.http.HttpClientHelper] Resource missing. [HTTP GET: https://repo.maven.apache.org/maven2/fabric-loom/fabric-loom.gradle.plugin/1.7.0/fabric-loom.gradle.plugin-1.7.0.pom]
+2025-07-04T14:28:40.087-0400 [DEBUG] [org.gradle.internal.resource.transport.http.HttpResponseResource] Attempting to download resource https://repo.maven.apache.org/maven2/fabric-loom/fabric-loom.gradle.plugin/1.7.0/fabric-loom.gradle.plugin-1.7.0.pom.
+2025-07-04T14:28:40.087-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Download https://repo.maven.apache.org/maven2/fabric-loom/fabric-loom.gradle.plugin/1.7.0/fabric-loom.gradle.plugin-1.7.0.pom' completed
+2025-07-04T14:28:40.087-0400 [DEBUG] [org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver] No meta-data file or artifact found for module 'fabric-loom:fabric-loom.gradle.plugin:1.7.0' in repository 'MavenRepo'.
+2025-07-04T14:28:40.088-0400 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.modulecache.PersistentModuleMetadataCache] Recording absence of module descriptor in cache: fabric-loom:fabric-loom.gradle.plugin:1.7.0 [changing = false]
+2025-07-04T14:28:40.088-0400 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.oldresult.TransientConfigurationResultsBuilder] Flushing resolved configuration data in Binary store in /home/virat/.gradle/.tmp/gradle9772590047353755938.bin. Wrote root 3.
+2025-07-04T14:28:40.088-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Resolve dependencies of detachedConfiguration1' completed
+2025-07-04T14:28:40.089-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Resolve files of configuration 'detachedConfiguration1'' completed
+2025-07-04T14:28:40.089-0400 [INFO] [org.gradle.plugin.use.internal.DefaultPluginRequestApplicator] Resolved plugin [id: 'fabric-loom', version: '1.7.0']
+2025-07-04T14:28:40.089-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Apply build file 'build.gradle' to root project 'UltimateSwords'' completed
+2025-07-04T14:28:40.089-0400 [DEBUG] [org.gradle.configuration.project.BuildScriptProcessor] Timing: Running the build script took 0.335 secs
+2025-07-04T14:28:40.090-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Notify afterEvaluate listeners of :' completed
+2025-07-04T14:28:40.090-0400 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Daemon worker: released lock on state of project :
+2025-07-04T14:28:40.090-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Configure project :'
+2025-07-04T14:28:40.090-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Configure project :' completed
+2025-07-04T14:28:40.090-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Configure build'
+2025-07-04T14:28:40.090-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Configure build' completed
+2025-07-04T14:28:40.090-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Finish root build tree' started
+2025-07-04T14:28:40.091-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Finish root build tree'
+2025-07-04T14:28:40.091-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Finish root build tree' completed
+2025-07-04T14:28:40.092-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 
+2025-07-04T14:28:40.092-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] FAILURE: Build failed with an exception.
+2025-07-04T14:28:40.092-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 
+2025-07-04T14:28:40.092-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] * Where:
+2025-07-04T14:28:40.092-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] Build file '/home/virat/IdeaProjects/UltimateSwords/build.gradle' line: 19
+2025-07-04T14:28:40.092-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 
+2025-07-04T14:28:40.092-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] * What went wrong:
+2025-07-04T14:28:40.092-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] Plugin [id: 'fabric-loom', version: '1.7.0'] was not found in any of the following sources:
+2025-07-04T14:28:40.092-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 
+2025-07-04T14:28:40.092-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] - Gradle Core Plugins (not a core plugin. For more available plugins, please refer to https://docs.gradle.org/8.12.1/userguide/plugin_reference.html in the Gradle documentation.)
+2025-07-04T14:28:40.093-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] - Included Builds (No included builds contain this plugin)
+2025-07-04T14:28:40.093-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] - Plugin Repositories (could not resolve plugin artifact 'fabric-loom:fabric-loom.gradle.plugin:1.7.0')
+2025-07-04T14:28:40.093-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter]   Searched in the following repositories:
+2025-07-04T14:28:40.093-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter]     Fabric(https://maven.fabricmc.net/)
+2025-07-04T14:28:40.093-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter]     Gradle Central Plugin Repository
+2025-07-04T14:28:40.093-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter]     MavenRepo
+2025-07-04T14:28:40.093-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 
+2025-07-04T14:28:40.093-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] * Try:
+2025-07-04T14:28:40.093-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] > Run with --stacktrace option to get the stack trace.
+2025-07-04T14:28:40.093-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] > Run with --scan to get full insights.
+2025-07-04T14:28:40.093-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] > Get more help at https://help.gradle.org.
+2025-07-04T14:28:40.093-0400 [ERROR] [org.gradle.internal.buildevents.BuildResultLogger] 
+2025-07-04T14:28:40.093-0400 [ERROR] [org.gradle.internal.buildevents.BuildResultLogger] BUILD FAILED in 887ms
+2025-07-04T14:28:40.093-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Build finished for file system watching' started
+2025-07-04T14:28:40.094-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Build finished for file system watching'
+2025-07-04T14:28:40.094-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Build finished for file system watching' completed
+2025-07-04T14:28:40.095-0400 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for cache directory md-supplier (/home/virat/.gradle/caches/8.12.1/md-supplier)
+2025-07-04T14:28:40.095-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on cache directory md-supplier (/home/virat/.gradle/caches/8.12.1/md-supplier).
+2025-07-04T14:28:40.096-0400 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for Build Output Cleanup Cache (/home/virat/IdeaProjects/UltimateSwords/.gradle/buildOutputCleanup)
+2025-07-04T14:28:40.096-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on Build Output Cleanup Cache (/home/virat/IdeaProjects/UltimateSwords/.gradle/buildOutputCleanup).
+2025-07-04T14:28:40.096-0400 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for cache directory md-rule (/home/virat/.gradle/caches/8.12.1/md-rule)
+2025-07-04T14:28:40.096-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on cache directory md-rule (/home/virat/.gradle/caches/8.12.1/md-rule).
+2025-07-04T14:28:40.097-0400 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.store.CachedStoreFactory] Resolution result cache closed. Cache reads: 0, disk reads: 0 (avg: 0.0 secs, total: 0.0 secs)
+2025-07-04T14:28:40.098-0400 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.store.CachedStoreFactory] Resolution result cache closed. Cache reads: 0, disk reads: 0 (avg: 0.0 secs, total: 0.0 secs)
+2025-07-04T14:28:40.098-0400 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.store.ResolutionResultsStoreFactory] Deleted 2 resolution results binary files in 0.001 secs
+2025-07-04T14:28:40.098-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Run build'
+2025-07-04T14:28:40.098-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Run build' completed
+2025-07-04T14:28:40.098-0400 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] Daemon worker: released lock on worker lease
+2025-07-04T14:28:40.104-0400 [DEBUG] [org.gradle.deployment.internal.DefaultDeploymentRegistry] Stopping 0 deployment handles
+2025-07-04T14:28:40.104-0400 [DEBUG] [org.gradle.deployment.internal.DefaultDeploymentRegistry] Stopped deployment handles
+2025-07-04T14:28:40.104-0400 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for file hash cache (/home/virat/IdeaProjects/UltimateSwords/.gradle/8.12.1/fileHashes)
+2025-07-04T14:28:40.104-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on file hash cache (/home/virat/IdeaProjects/UltimateSwords/.gradle/8.12.1/fileHashes).
+2025-07-04T14:28:40.105-0400 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for checksums cache (/home/virat/IdeaProjects/UltimateSwords/.gradle/8.12.1/checksums)
+2025-07-04T14:28:40.105-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on checksums cache (/home/virat/IdeaProjects/UltimateSwords/.gradle/8.12.1/checksums).
+2025-07-04T14:28:40.105-0400 [DEBUG] [org.gradle.cache.internal.DefaultCacheCoordinator] Cache Compressed Files Expansion Cache (/home/virat/IdeaProjects/UltimateSwords/.gradle/8.12.1/expanded) was closed 0 times.
+2025-07-04T14:28:40.105-0400 [DEBUG] [org.gradle.cache.internal.DefaultCacheCleanupExecutor] VCS Checkout Cache (/home/virat/IdeaProjects/UltimateSwords/.gradle/vcs-1) has last been fully cleaned up 0 hours ago
+2025-07-04T14:28:40.105-0400 [DEBUG] [org.gradle.cache.internal.DefaultCacheCleanupExecutor] Skipping cleanup for VCS Checkout Cache (/home/virat/IdeaProjects/UltimateSwords/.gradle/vcs-1) as it is not yet due
+2025-07-04T14:28:40.105-0400 [DEBUG] [org.gradle.cache.internal.DefaultCacheCoordinator] Cache VCS Checkout Cache (/home/virat/IdeaProjects/UltimateSwords/.gradle/vcs-1) was closed 0 times.
+2025-07-04T14:28:40.105-0400 [DEBUG] [org.gradle.cache.internal.DefaultCacheCoordinator] Cache VCS metadata (/home/virat/IdeaProjects/UltimateSwords/.gradle/8.12.1/vcsMetadata) was closed 0 times.
+2025-07-04T14:28:40.105-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Deleting unused version-specific caches in /home/virat/IdeaProjects/UltimateSwords/.gradle' started
+2025-07-04T14:28:40.106-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Deleting unused version-specific caches in /home/virat/IdeaProjects/UltimateSwords/.gradle'
+2025-07-04T14:28:40.106-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Deleting unused version-specific caches in /home/virat/IdeaProjects/UltimateSwords/.gradle' completed
+2025-07-04T14:28:40.106-0400 [DEBUG] [org.gradle.cache.internal.DefaultCacheCleanupExecutor] dependencies-accessors (/home/virat/.gradle/caches/8.12.1/dependencies-accessors) has last been fully cleaned up 0 hours ago
+2025-07-04T14:28:40.106-0400 [DEBUG] [org.gradle.cache.internal.DefaultCacheCleanupExecutor] Skipping cleanup for dependencies-accessors (/home/virat/.gradle/caches/8.12.1/dependencies-accessors) as it is not yet due
+2025-07-04T14:28:40.106-0400 [DEBUG] [org.gradle.cache.internal.DefaultCacheCoordinator] Cache dependencies-accessors (/home/virat/.gradle/caches/8.12.1/dependencies-accessors) was closed 0 times.
+2025-07-04T14:28:40.113-0400 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has finished executing the build.
+2025-07-04T14:28:40.150-0400 [DEBUG] [org.gradle.launcher.daemon.client.DaemonClientConnection] thread 1: dispatching class org.gradle.launcher.daemon.protocol.CloseInput
+2025-07-04T14:28:40.156-0400 [DEBUG] [org.gradle.launcher.daemon.client.DaemonClient] Received result Success[value=org.gradle.launcher.exec.BuildActionResult@180da663] from daemon DaemonInfo{pid=19337, address=[56efe220-7032-4233-85f9-d283cafe7f8b port:36825, addresses:[/127.0.0.1]], state=Idle, lastBusy=1751653705131, context=DefaultDaemonContext[uid=364eb0da-545a-4f22-bcf6-10d7cca52efe,javaHome=/home/virat/jdk/jdk-21+35,javaVersion=21,javaVendor=Eclipse Adoptium,daemonRegistryDir=/home/virat/.gradle/daemon,pid=19337,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=-Xmx1G,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]} (build should be done).
+2025-07-04T14:28:40.156-0400 [DEBUG] [org.gradle.launcher.daemon.client.DaemonClientConnection] thread 1: dispatching class org.gradle.launcher.daemon.protocol.Finished
+2025-07-04T14:28:40.156-0400 [DEBUG] [org.gradle.launcher.daemon.client.DaemonClientConnection] thread 1: connection stop
+2025-07-04T14:28:40.158-0400 [DEBUG] [org.gradle.cache.internal.DefaultCacheCoordinator] Cache cache directory jvms (/home/virat/.gradle/caches/8.12.1/jvms) was closed 0 times.
+2025-07-04T14:28:40.158-0400 [LIFECYCLE] [org.gradle.launcher.cli.DebugLoggerWarningAction] 
+#############################################################################
+   WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+
+   Debug level logging will leak security sensitive information!
+
+   For more details, please refer to https://docs.gradle.org/8.12.1/userguide/logging.html#sec:debug_security in the Gradle documentation.
+#############################################################################
+

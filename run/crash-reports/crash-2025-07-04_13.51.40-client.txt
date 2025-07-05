@@ -1,0 +1,118 @@
+---- Minecraft Crash Report ----
+// My bad.
+
+Time: 2025-07-04 13:51:40
+Description: Bootstrap
+
+java.lang.IllegalAccessError: class net.minecraft.registry.SimpleRegistry tried to access method 'void net.minecraft.registry.entry.RegistryEntry$Reference.setRegistryKey(net.minecraft.registry.RegistryKey)' (net.minecraft.registry.SimpleRegistry and net.minecraft.registry.entry.RegistryEntry$Reference are in unnamed module of loader net.fabricmc.loader.impl.launch.knot.KnotClassLoader @6d00a15d)
+	at net.minecraft.registry.SimpleRegistry.add(SimpleRegistry.java:147)
+	at net.minecraft.registry.SimpleDefaultedRegistry.add(SimpleDefaultedRegistry.java:23)
+	at net.minecraft.registry.Registry.register(Registry.java:130)
+	at net.minecraft.registry.Registry.register(Registry.java:126)
+	at net.minecraft.registry.Registry.register(Registry.java:122)
+	at net.minecraft.fluid.Fluids.register(Fluids.java:14)
+	at net.minecraft.fluid.Fluids.<clinit>(Fluids.java:7)
+	at net.minecraft.block.AbstractBlock$AbstractBlockState.<init>(AbstractBlock.java:808)
+	at net.minecraft.block.BlockState.<init>(BlockState.java:17)
+	at net.minecraft.state.StateManager.method_28484(StateManager.java:64)
+	at java.base/java.util.stream.Streams$StreamBuilderImpl.forEachRemaining(Streams.java:411)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at net.minecraft.state.StateManager.<init>(StateManager.java:59)
+	at net.minecraft.state.StateManager$Builder.build(StateManager.java:160)
+	at net.minecraft.block.Block.<init>(Block.java:199)
+	at net.minecraft.block.AirBlock.<init>(AirBlock.java:20)
+	at net.minecraft.block.Blocks.<clinit>(Blocks.java:147)
+	at net.minecraft.block.FireBlock.registerDefaultFlammables(FireBlock.java:336)
+	at net.minecraft.Bootstrap.initialize(Bootstrap.java:52)
+	at net.minecraft.client.main.Main.main(Main.java:130)
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:480)
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:74)
+	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: main
+Stacktrace:
+	at net.minecraft.registry.SimpleRegistry.add(SimpleRegistry.java:147)
+	at net.minecraft.registry.SimpleDefaultedRegistry.add(SimpleDefaultedRegistry.java:23)
+	at net.minecraft.registry.Registry.register(Registry.java:130)
+	at net.minecraft.registry.Registry.register(Registry.java:126)
+	at net.minecraft.registry.Registry.register(Registry.java:122)
+	at net.minecraft.fluid.Fluids.register(Fluids.java:14)
+	at net.minecraft.fluid.Fluids.<clinit>(Fluids.java:7)
+	at net.minecraft.block.AbstractBlock$AbstractBlockState.<init>(AbstractBlock.java:808)
+	at net.minecraft.block.BlockState.<init>(BlockState.java:17)
+	at net.minecraft.state.StateManager.method_28484(StateManager.java:64)
+	at java.base/java.util.stream.Streams$StreamBuilderImpl.forEachRemaining(Streams.java:411)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at net.minecraft.state.StateManager.<init>(StateManager.java:59)
+	at net.minecraft.state.StateManager$Builder.build(StateManager.java:160)
+	at net.minecraft.block.Block.<init>(Block.java:199)
+	at net.minecraft.block.AirBlock.<init>(AirBlock.java:20)
+	at net.minecraft.block.Blocks.<clinit>(Blocks.java:147)
+	at net.minecraft.block.FireBlock.registerDefaultFlammables(FireBlock.java:336)
+	at net.minecraft.Bootstrap.initialize(Bootstrap.java:52)
+
+-- Initialization --
+Details:
+	Modules: 
+Stacktrace:
+	at net.minecraft.client.main.Main.main(Main.java:130)
+	at net.fabricmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:480)
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:74)
+	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.21.1
+	Minecraft Version ID: 1.21.1
+	Operating System: Linux (amd64) version 6.11.0-29-generic
+	Java Version: 21, Eclipse Adoptium
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Eclipse Adoptium
+	Memory: 480293928 bytes (458 MiB) / 765460480 bytes (730 MiB) up to 4137680896 bytes (3946 MiB)
+	CPUs: 12
+	Processor Vendor: GenuineIntel
+	Processor Name: Intel(R) Core(TM) i7-8750H CPU @ 2.20GHz
+	Identifier: Intel64 Family 6 Model 158 Stepping 10
+	Microarchitecture: Coffee Lake
+	Frequency (GHz): 2.20
+	Number of physical packages: 1
+	Number of physical CPUs: 6
+	Number of logical CPUs: 12
+	Graphics card #0 name: CoffeeLake-H GT2 [UHD Graphics 630]
+	Graphics card #0 vendor: Intel Corporation (0x8086)
+	Graphics card #0 VRAM (MiB): 256.00
+	Graphics card #0 deviceId: 0x3e9b
+	Graphics card #0 versionInfo: unknown
+	Graphics card #1 name: TU106M [GeForce RTX 2070 Mobile]
+	Graphics card #1 vendor: NVIDIA Corporation (0x10de)
+	Graphics card #1 VRAM (MiB): 288.00
+	Graphics card #1 deviceId: 0x1f10
+	Graphics card #1 versionInfo: unknown
+	Virtual memory max (MiB): 11987.81
+	Virtual memory used (MiB): 8800.68
+	Swap memory total (MiB): 4096.00
+	Swap memory used (MiB): 0.00
+	Space in storage for jna.tmpdir (MiB): <path not set>
+	Space in storage for org.lwjgl.system.SharedLibraryExtractPath (MiB): <path not set>
+	Space in storage for io.netty.native.workdir (MiB): <path not set>
+	Space in storage for java.io.tmpdir (MiB): available: 624283.38, total: 786005.25
+	Space in storage for workdir (MiB): available: 624283.38, total: 786005.25
+	JVM Flags: 0 total; 
+	Launched Version: Fabric
+	Backend library: LWJGL version 3.3.3-snapshot
+	Backend API: Unknown
+	Window size: <not initialized>
+	GFLW Platform: <error>
+	GL Caps: ERR
+	GL debug messages: <disabled>
+	Is Modded: Definitely; Client brand changed to 'fabric'
+	Universe: 404
+	Type: Client (map_client.txt)
+	Locale: en_US
+	System encoding: UTF-8
+	File encoding: UTF-8
+	CPU: <unknown>
