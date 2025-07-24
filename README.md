@@ -1,7 +1,7 @@
 DOWNLOAD MOD HERE:
-https://modrinth.com/mod/ultimateswords!
+#"https://modrinth.com/mod/ultimateswords!"
 OR:
-https://github.com/ViratS-best/Ultimate-Swords/blob/main/ultimate_swords-1.0.0.jar
+#https://github.com/ViratS-best/Ultimate-Swords/blob/main/ultimate_swords-1.0.0.jar
 # Ultimate Swords
 
 ## Overview
