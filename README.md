@@ -1,3 +1,5 @@
+DOWNLOAD MOD HERE:
+https://github.com/ViratS-best/Ultimate-Swords/blob/main/ultimate_swords-1.0.0.jar
 # Ultimate Swords
 
 ## Overview
