@@ -1,5 +1,5 @@
 DOWNLOAD MOD HERE:
-# (https://modrinth.com/mod/ultimateswords!)
+# (LINK!!! WARNING WITH THE ! MARK IN THE LINK! : "https://modrinth.com/mod/ultimateswords!")
 ## WARNING THIS LINK ABOVE MIGHT NOT BE ACTIVE YET AS I JUST PUBLISHED IT!
 OR:
 # https://github.com/ViratS-best/Ultimate-Swords/blob/main/ultimate_swords-1.0.0.jar
